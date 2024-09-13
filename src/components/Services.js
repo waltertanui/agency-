@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServiceCard = ({ title, subservices, bgColor, textColor }) => (
-  <div className={`p-6 rounded-lg ${bgColor} ${textColor}`}>
+  <div className={`p-6 rounded-lg ${bgColor} ${textColor} h-full`}>
     <h3 className="text-xl font-semibold mb-4">{title}</h3>
     {subservices.map((service, index) => (
       <div key={index} className="bg-opacity-20 bg-white text-sm p-2 mb-2 rounded">
@@ -34,16 +34,16 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-16 bg-white">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-8">
+    <div className="min-h-screen bg-white flex items-center py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8">
           OUR <span className="text-green-500">(+) SERVICES</span>
         </h2>
-        <p className="mb-8 text-lg">
+        <p className="mb-12 text-lg max-w-3xl">
           Morningside AI assists you in identifying and integrating cutting-edge AI solutions, guiding you
           seamlessly from inception to deployment and beyond.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

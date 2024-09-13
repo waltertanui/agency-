@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
@@ -31,5 +30,4 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
+export default Footer; 
