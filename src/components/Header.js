@@ -5,9 +5,8 @@ const Header = () => {
     <header className="bg-black text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          {/* Replace with your actual logo */}
-          <div className="w-10 h-10 bg-white mr-2"></div>
-          <h1 className="text-2xl font-bold">Walter AI</h1>
+          {/* Replace 'logo.png' with the actual path to your logo */}
+          <img src="/Logo.png" alt="Logo" className="w-20 h-20 mr-2" />
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
@@ -27,3 +26,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

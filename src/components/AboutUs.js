@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const TeamMember = ({ image, name, title, experience }) => (
   <div className="flex flex-col items-center">
     <img src={image} alt={name} className="w-32 h-32 rounded-full object-cover shadow-md mb-4" />
-    <h4 className="text-xl font-semibold">{name}</h4>
+    <h4 className="text-xl font-semibold text-black">{name}</h4>
     <p className="text-green-500 font-medium">{title}</p>
     <p className="text-sm text-gray-600 mt-2">{experience} years experience</p>
   </div>
@@ -63,18 +63,18 @@ const AboutUs = () => {
             </div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-6 text-center text-black">Our Leadership</h3>
-              <div className="flex justify-around">
+              <div className="flex justify-around ">
                 <TeamMember 
-                  image="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                  image="/walter.jpeg"
                   name="Walter Tanui"
                   title="Founder and Developer"
-                  experience={15}
+                  experience={3}
                 />
                 <TeamMember 
-                  image="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e"
+                  image="/Obed.jpeg"
                   name="Obed Tanui"
                   title="Founder and Chief AI Strategist"
-                  experience={12}
+                  experience={3}
                 />
               </div>
             </div>
